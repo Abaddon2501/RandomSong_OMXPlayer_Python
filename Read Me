@@ -1,0 +1,39 @@
+This is a set of python programs that will randomly play song on my Raspberry Pi Zero for my car stereo. I set up Samba share and rsync so I can sync songs to my car when ever it is within wireless range.
+This is poorly written but does work well so far. I am running songs off a usb 2.0 flash drive and the pi zero runs about 40% cpu when playing a song and 4% idle while waiting for GPIO inputs. At some point I will write them all into one fancy program but this is working for me now.
+Current pictures and prototyping case. https://imgur.com/a/zmkwWHt
+
+With the files Startmusic.py, Stopmusic.py, Killomx.py, and Chelseastart.py running at startup via systemctl. I can press the GIPO button's
+to start my Play list Startmusic.py or my fiances playlist Chelseastart.py.
+
+Systemctl guide. https://www.raspberrypi.org/forums/viewtopic.php?t=200174
+
+I'm using the drivers from https://github.com/the-raspberry-pi-guy/lcd
+Great starter video for i2c LCD control https://www.youtube.com/watch?v=fR5XhHYzUK0
+
+Parts:
+1602 i2c LCD Screen #I will end up wiring in a Potentiometer so I can adjust the brightness...at night it can be REALLY bright.
+LGDehome IIC/I2C/TWI LCD 1602 16x2 Serial Interface Adapter Module Blue Backlight for Arduino UNO R3 MEGA2560(pack of 2)
+http://a.co/d/7tGIa2h
+
+#Sound quality is pretty good...or even great for the price...I might end up getting a Pimoroni pHAT DAC but this works for now.
+"7.1" Channel USB External Sound Card Audio Adapter
+http://a.co/d/eYNuKos
+
+Anker 4-Port USB 3.0 Ultra Slim Data Hub
+http://a.co/d/2dGRmA9
+
+#Needed GPIO pins, case, OTG Cable, and HDMI adapter so this kit worked great and was pretty cheap
+Raspberry Pi Zero W Case, iUniker Starter Kit - Include Pi Zero Case,Heatsink,Power Supply Switch Cable,OTG Cable,
+HDMI Adapter,Male GPIO Header for Raspberry Pi Zero /w 
+http://a.co/d/gPwULyX
+
+#Prototyping case. These were a great suggestion from /r/raspberry_pi/
+Super Stacker® Crayon Box
+https://www.walmart.com/ip/Super-Stacker-Crayon-Box-Blue/36124114
+
+Random Wireless dongle
+random monmentary switches from Wish
+Random Jumper cables
+Random Thumbdrive
+
+I hope any of my code can be useful and give you ideas good luck on your projects.
